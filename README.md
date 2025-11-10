@@ -56,3 +56,64 @@ Solution: Applying thresholding on detection confidence score.
 ### Demo
    Full video is attached [Demo](https://www.youtube.com/watch?v=7nD9INKZuLk)
    <p align="left"><img src="https://user-images.githubusercontent.com/90580636/162852885-e3f6555a-0ca9-4b32-9a09-b5625bc02146.gif" width="400" height="300" /></p>
+
+---
+
+## 🚗 Arduino RC Car Adaptation
+
+**새 프로젝트!** / **New Project!**
+
+이 저장소에 **Arduino 기반 RC 카 버전**이 추가되었습니다! 상업용 KUKA iiwa 로봇 대신 저비용으로 제작할 수 있는 Arduino 제어 로봇 팔을 사용합니다.
+
+An **Arduino-based RC car version** has been added to this repository! Use a low-cost Arduino-controlled robot arm instead of the commercial KUKA iiwa robot.
+
+### Key Features
+- 💰 **Low Cost**: $200-400 USD (vs $50,000+ for KUKA)
+- 🤖 **Arduino Mega 2560**: Servo-based 4-DOF robot arm
+- 🚗 **Mobile Platform**: 4-wheel RC car for cargo transport
+- 🎯 **Same Vision System**: Uses YOLOv4 object detection
+- 🔌 **No ROS Required**: Pure Python + Arduino
+- 📚 **Complete Documentation**: Full build guide, wiring diagrams, BOM
+
+### Quick Start
+
+```bash
+# Navigate to Arduino RC Car project
+cd arduino_rc_car
+
+# See detailed README
+cat README.md
+
+# Install Python dependencies
+cd python_control
+pip install -r requirements.txt
+
+# Upload Arduino firmware (use Arduino IDE)
+# Open: arduino_code/rc_car_robot_arm.ino
+
+# Run the system
+python yolo_arduino_controller.py
+```
+
+### Documentation
+- 📖 [Arduino RC Car README](arduino_rc_car/README.md) - Main documentation (한국어/English)
+- 🛒 [Bill of Materials](arduino_rc_car/docs/BOM.md) - Complete parts list
+- 🔌 [Wiring Guide](arduino_rc_car/docs/WIRING.md) - Detailed wiring diagrams
+- 📚 [Full Guide](arduino_rc_car/docs/README.md) - Installation, usage, troubleshooting
+
+### Comparison
+
+| Feature | KUKA iiwa (Original) | Arduino RC Car (New) |
+|---------|---------------------|---------------------|
+| **Cost** | ~$50,000+ | ~$200-400 |
+| **Platform** | Fixed workstation | Mobile RC car |
+| **Control** | ROS + C++ | Python + Arduino |
+| **Robot Arm** | 7-DOF industrial | 4-DOF servo-based |
+| **Setup Difficulty** | High | Moderate |
+| **Portability** | Fixed installation | Portable |
+| **Learning Curve** | Steep | Gentle |
+| **Ideal For** | Research labs, Industry | Education, Hobbyists |
+
+**Perfect for**: Students, hobbyists, educators, and anyone wanting to learn robotics without breaking the bank!
+
+---
