@@ -1,0 +1,39 @@
+# Arduino RC Car Project - Gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+*.jpg
+*.png
+*.avi
+*.mp4
+BBOX.txt
+
+# Logs
+*.log
+
+# Temporary files
+/tmp/
